@@ -9,6 +9,12 @@
     />
     <title>Image Gallery</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .relative:hover .absolute {
+        opacity: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- Global Container -->
@@ -58,7 +64,7 @@
           <div class="flex justify-between border-b-2">
             <input
               type="text"
-              class="ml-4"
+              class="md:px-12"
               placeholder="Search"
             />
             <button>
@@ -77,10 +83,224 @@
           </div>
           <!-- Upload Button -->
           <button
-            class="bg-black text-white rounded-lg py-3 px-3 border-2 border-black hover:bg-white duration-500 hover:text-black"
+            class="bg-black text-white rounded-lg py-3 px-3 border-2 border-black hover:bg-white duration-500 hover:text-black md:px-12"
           >
             Upload
           </button>
+        </div>
+        <!-- Image Grid Container -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-10 mt-10"
+        >
+          <!-- Image Card 1 -->
+          <div class="relative group">
+            <img
+              src="./images/image1.jpg"
+              alt="Image 1"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute left-0 right-0 bottom-0 p-1 px-4 opacity-0 bg-black bg-opacity-60 text-white flex items-center justify-center transition-opacity duration-300"
+            >
+              <div class="text-center">
+                <h3 class="text-lg font-semibold mb-1">
+                  Image 1
+                </h3>
+                <p class="text-sm">Likes: 10</p>
+              </div>
+              <svg
+                class="w-6 h-6 text-white absolute top-3 right-3 cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M19 14.7l-7-7-7 7M12 22V7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Image Card 2 -->
+          <div class="relative group">
+            <img
+              src="./images/image2.jpg"
+              alt="Image 1"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute left-0 right-0 bottom-0 p-1 px-4 opacity-0 bg-black bg-opacity-60 text-white flex items-center justify-center transition-opacity duration-300"
+            >
+              <div class="text-center">
+                <h3 class="text-lg font-semibold mb-1">
+                  Image 1
+                </h3>
+                <p class="text-sm">Likes: 10</p>
+              </div>
+              <svg
+                class="w-6 h-6 text-white absolute top-3 right-3 cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M19 14.7l-7-7-7 7M12 22V7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Image Card 3 -->
+          <div class="relative group">
+            <img
+              src="./images/image3.jpg"
+              alt="Image 1"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute left-0 right-0 bottom-0 p-1 px-4 opacity-0 bg-black bg-opacity-60 text-white flex items-center justify-center transition-opacity duration-300"
+            >
+              <div class="text-center">
+                <h3 class="text-lg font-semibold mb-1">
+                  Image 1
+                </h3>
+                <p class="text-sm">Likes: 10</p>
+              </div>
+              <svg
+                class="w-6 h-6 text-white absolute top-3 right-3 cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M19 14.7l-7-7-7 7M12 22V7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Image Card 4 -->
+          <div class="relative group">
+            <img
+              src="./images/image4.jpg"
+              alt="Image 1"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute left-0 right-0 bottom-0 p-1 px-4 opacity-0 bg-black bg-opacity-60 text-white flex items-center justify-center transition-opacity duration-300"
+            >
+              <div class="text-center">
+                <h3 class="text-lg font-semibold mb-1">
+                  Image 1
+                </h3>
+                <p class="text-sm">Likes: 10</p>
+              </div>
+              <svg
+                class="w-6 h-6 text-white absolute top-3 right-3 cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M19 14.7l-7-7-7 7M12 22V7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Image Card 5 -->
+          <div class="relative group">
+            <img
+              src="./images/image5.jpg"
+              alt="Image 1"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute left-0 right-0 bottom-0 p-1 px-4 opacity-0 bg-black bg-opacity-60 text-white flex items-center justify-center transition-opacity duration-300"
+            >
+              <div class="text-center">
+                <h3 class="text-lg font-semibold mb-1">
+                  Image 1
+                </h3>
+                <p class="text-sm">Likes: 10</p>
+              </div>
+              <svg
+                class="w-6 h-6 text-white absolute top-3 right-3 cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M19 14.7l-7-7-7 7M12 22V7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Image Card 6 -->
+          <div class="relative group">
+            <img
+              src="./images/image6.jpg"
+              alt="Image 1"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute left-0 right-0 bottom-0 p-1 px-4 opacity-0 bg-black bg-opacity-60 text-white flex items-center justify-center transition-opacity duration-300"
+            >
+              <div class="text-center">
+                <h3 class="text-lg font-semibold mb-1">
+                  Image 1
+                </h3>
+                <p class="text-sm">Likes: 10</p>
+              </div>
+              <svg
+                class="w-6 h-6 text-white absolute top-3 right-3 cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M19 14.7l-7-7-7 7M12 22V7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </div>
